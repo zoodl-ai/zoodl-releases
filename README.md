@@ -18,7 +18,9 @@ This repository does not contain the private application source code. Published 
 
 ## Release policy
 
-Published releases are immutable. Never replace an asset or reuse a tag; any byte change requires a new version. SHA-256 detects corruption or mismatched bytes but does not replace platform code signing.
+Release immutability is enabled for releases published after v1.0.0. Never replace an asset or reuse a tag; any byte change requires a new version. The staging v1.0.0 release predates enforcement and remains technically mutable, but its published bytes must not be changed.
+
+SHA-256 detects corruption or mismatched bytes but does not replace platform code signing.
 
 The Squirrel `.nupkg` artifact is not a user installer. Do not list it as a manual download or fetch it from public installation scripts.
 
